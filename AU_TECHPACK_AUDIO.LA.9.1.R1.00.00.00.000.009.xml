@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="AUDIO.LA.9.0" sync-j="8"/>
+  <project name="clo/la/platform/hardware/qcom/audio-ar" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="644f9710ef2a74176e9cf482d65b2929c9520cbb" upstream="refs/heads/audio-android-hal.lnx.3.0.r33-rel" groups="base">
+    <linkfile src="configs/audio_vendor_product.mk" dest="vendor/qcom/defs/product-defs/vendor/audio_vendor_product.mk"/>
+    <linkfile src="configs/{target_product}/audio-techpack.mk" dest="vendor/qcom/defs/product-defs/vendor/audio-techpack.mk"/>
+  </project>
+  <project name="clo/la/platform/vendor/qcom-opensource/audio-hal/st-hal-ar" path="vendor/qcom/opensource/audio-hal/st-hal" revision="449921b175c874b3ced766baf55a22d03c97ff3f" upstream="refs/heads/audio-android-hal.lnx.3.0.r33-rel" groups="hal"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/agm" path="vendor/qcom/opensource/agm" revision="659363f4e2b6849f4bd0696125a41533444ddbe0" upstream="refs/heads/audio-platform-arintf.lnx.2.0.r10-rel" groups="hal"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/arpal-lx" path="vendor/qcom/opensource/pal" revision="6c0e5f53126dd1465da85274465fcfbb14e3b474" upstream="refs/heads/audio-platform-arintf.lnx.2.0.r10-rel" groups="hal"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" revision="e1c8b4c0563721fe0b5bbf4ea4224d9d5bbf83f2" upstream="refs/heads/audio-kernel.lnx.6.0.r61-rel" groups="kernel">
+    <linkfile src="audio_kernel_vendor_board.mk" dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk"/>
+    <linkfile src="audio_kernel_product_board.mk" dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk"/>
+  </project>
+</manifest>
