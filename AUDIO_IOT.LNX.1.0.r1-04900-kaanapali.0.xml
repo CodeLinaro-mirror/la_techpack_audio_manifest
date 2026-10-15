@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="platform/hardware/qcom/audio-ar" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="083ed177a778984a56df06ce614a330fb9957bf3" upstream="refs/heads/audio-ahal-iot.lnx.1.0.r1-rel" groups="base">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_vendor_product.mk" src="configs/audio_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio-techpack.mk" src="configs/canoe/audio-techpack.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/args" path="vendor/qcom/opensource/args" revision="32930e1c66fc4d87b077f5df7f83708ddd5fd839" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio-hal/st-hal-ar" path="vendor/qcom/opensource/audio-hal/st-hal" revision="d0c7589a6d11891546a222989138520561c5b6f2" upstream="refs/heads/audio-ahal-iot.lnx.1.0.r1-rel" groups="hal"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio-utils" path="vendor/qcom/opensource/audio-utils" revision="cb1b5c0a25c9dec92a327fceb22414db0015e9c8" upstream="refs/heads/audio-utils-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio_ftm" path="vendor/qcom/opensource/audio_ftm" revision="f45137ed06b80afc3cd672e43cc5dfa1fd4e98c0" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio_mcs" path="vendor/qcom/opensource/audio_mcs" revision="10d45dee2f50951e7ab0a0e886569524ab2a0c19" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audioreach-conf" path="vendor/qcom/opensource/audioreach-conf" revision="255829dc29087c6e12e89ec174ffc91889b0652e" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/meta-audio-utils" path="layers/meta-qti-audio/recipes-audio-utils" revision="0bc5be69be3edae3d55ea48eaa89e7838edce38a" upstream="refs/heads/audio-utils-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/meta-audioreach" path="layers/meta-qti-audio/recipes-audioreach" revision="9e5291e9e3b8eae0ea8d93ab5d612008503ed21a" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/mm-audio-headers" path="vendor/qcom/opensource/mm-audio-headers" revision="fa1e5927571b3a888a8b92d34bdbe0afd0fa01fc" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/agm" path="vendor/qcom/opensource/agm" revision="5e9ef69187cd033040cc75df694d2d3238dd420d" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel" groups="hal"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/arpal-lx" path="vendor/qcom/opensource/pal" revision="be12ce93391cd78ae7d89b0d18c8117da90f8f77" upstream="refs/heads/audio-core-iot.lnx.1.0.r1-rel" groups="hal"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/audio-devicetree" path="vendor/qcom/opensource/audio-devicetree" revision="1b3838f91b9e4b045683fe27940740ee25d41c73" upstream="refs/heads/audio-kernel-iot.lnx.1.0.r1-rel" groups="kernel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" revision="3e344c31a7872f5a69a2317ae560b264defe9fa4" upstream="refs/heads/audio-kernel-iot.lnx.1.0.r1-rel" groups="kernel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk" src="audio_kernel_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk" src="audio_kernel_product_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/audio-vibrator" path="vendor/qcom/opensource/audio-vibrator" revision="891c611d3f75fc91cb480725f2ba3c12be5d1909" upstream="refs/heads/audio-ahal-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/audioreach-engine" path="vendor/qcom/opensource/audioreach-engine" revision="3d1e32e9126ac3b68ed5db1cf8a413017a4bd96b" upstream="refs/heads/audioreach-engine.iot.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/tinyalsa" path="vendor/qcom/opensource/tinyalsa" revision="0fd830b2a26f8d35c28150573c2476bfa20e8170" upstream="refs/heads/audio-tinylibs-iot.lnx.1.0.r1-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/tinycompress" path="vendor/qcom/opensource/tinycompress" revision="38a0f00826fc11c9c038dc08dff7abfa50910abe" upstream="refs/heads/audio-tinylibs-iot.lnx.1.0.r1-rel"/>
+</manifest>
